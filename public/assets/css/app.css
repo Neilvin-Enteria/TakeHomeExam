@@ -1,0 +1,193 @@
+html {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+a {
+    color: transparent;
+}
+
+.create-agent-container {
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "title" "firstname" "lastname" "buttons";
+    width: 45%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 400px;
+    margin-top: 7%;
+}
+
+.create-agent-container input[type="text"] {
+    padding: 8px;
+    border: 0;
+    border-bottom: 1px solid black;
+    outline: none;
+    width: 300px;
+}
+
+.create-agent-container button {
+    font-size: 12px;
+    width: 160px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.create-title {
+    grid-area: title;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.agent-first-name {
+    grid-area: firstname;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.agent-last-name {
+    grid-area: lastname;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.create-button-group {
+    grid-area: buttons;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+    margin: 6px 0 0 6px;
+}
+
+.create-sub-agent-container {
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1.2fr 0.8fr 1fr 1fr 1fr;
+    grid-template-areas: "title" "select" "firstname" "lastname" "buttons";
+    width: 45%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 400px;
+    margin-top: 7%;
+}
+
+.create-sub-agent-container input[type="text"] {
+    padding: 8px;
+    border: 0;
+    border-bottom: 1px solid black;
+    outline: none;
+    width: 300px;
+}
+
+.create-sub-agent-container button {
+    font-size: 12px;
+    width: 160px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.select-agent-container {
+    grid-area: select;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.select-agent-container select {
+    width: 320px;
+    height: 30px;
+    padding: 4px;
+    font-size: 12px;
+}
+
+.create-title {
+    grid-area: title;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+.sub-agent-first-name {
+    grid-area: firstname;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sub-agent-last-name {
+    grid-area: lastname;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.create-button-group {
+    grid-area: buttons;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+    margin: 6px 0 0 6px;
+}
+
+.intro-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 120px 90px 60px 120px;
+    grid-template-areas: "title" "description" "create" "view";
+    justify-content: center;
+    margin-top: 7%;
+}
+
+.title {
+    grid-area: title;
+    font-size: 64px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.description {
+    grid-area: description;
+    font-size: 18px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.check-records {
+    grid-area: check-records;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.button-group-create {
+    grid-area: create;
+    display: grid;
+    grid-template-rows: 60px;
+    grid-template-columns: 220px 220px;
+    grid-template-areas: "agent subagent";
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.button-group-view {
+    grid-area: view;
+    display: grid;
+    grid-template-rows: 60px 60px;
+    grid-template-columns: 220px 220px;
+    grid-template-areas: "check-records check-records" "view-agents view-sub-agents";
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.intro-container button {
+    font-size: 12px;
+    width: 200px;
+    height: 30px;
+    cursor: pointer;
+}
